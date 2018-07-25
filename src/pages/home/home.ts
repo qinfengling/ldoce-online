@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 
 @Component({
   selector: 'page-home',
@@ -8,12 +9,11 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   keyword = '';
 
-  constructor(public navCtrl: NavController) {
-
-  }
+  constructor(public navCtrl: NavController) {}
 
   lookup() {
-    alert(this.keyword);
-    this.keyword = '';
+    if (this.keyword) {
+      this.navCtrl.push(DetailPage, { keyword: this.keyword });
+    }
   }
 }
