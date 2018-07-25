@@ -2,6 +2,8 @@
 
 It is a cross-platform mobile app, written with Ionic 3.
 
+## [Screenshots](https://github.com/qinfengling/ldoce-online/wiki#screenshots)
+
 ## Development
 
 ### Prerequisites
