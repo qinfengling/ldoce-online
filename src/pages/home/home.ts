@@ -6,9 +6,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  keyword = '';
 
   constructor(public navCtrl: NavController) {
 
   }
 
+  lookup() {
+    alert(this.keyword);
+    this.keyword = '';
+  }
 }
