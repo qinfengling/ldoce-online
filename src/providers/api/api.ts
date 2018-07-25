@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http';
 import { Injectable } from '@angular/core';
 
 /*
@@ -10,9 +10,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ApiProvider {
 
-  constructor(public http: HttpClient) {}
+  constructor(public http: HTTP) {}
 
   getContent(url) {
-    return this.http.get(url, { responseType: 'text' })
+    return this.http.get(url, {}, {});
   }
 }
